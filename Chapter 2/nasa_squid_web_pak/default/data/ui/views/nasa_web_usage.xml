@@ -1,0 +1,66 @@
+<dashboard>
+  <label>NASA Web Usage</label>
+  <description>Summary page for our new Splunk Dashboard</description>
+  <row>
+    <panel>
+      <single>
+        <title>Average Hits Per Day</title>
+        <search>
+          <query>index=main sourcetype=NASASquidLogs | stats count by MonthDay | stats avg(count) AS AvgHitsPerDay  | eval AvgHitsPerDay=round(AvgHitsPerDay,2)</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="linkView">search</option>
+        <option name="underLabel">Hits Per Day</option>
+      </single>
+    </panel>
+    <panel>
+      <chart>
+        <title>Web Site ReturnCodes</title>
+        <search>
+          <query>index=main source="/var/nasa/NASA_access_log_Jul95" | stats count by ReturnCode</query>
+          <earliest>0</earliest>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.axisY2.enabled">undefined</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">all</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Top 10 Website Requests</title>
+        <search>
+          <query>index=main source="/var/nasa/NASA_access_log_Jul95"
+| top 10 Request</query>
+          <earliest>0</earliest>
+          <latest></latest>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">cell</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

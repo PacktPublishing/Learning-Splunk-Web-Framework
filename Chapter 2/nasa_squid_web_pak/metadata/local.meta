@@ -1,0 +1,18 @@
+[app/ui]
+version = 6.2.3
+modtime = 1457994189.051983000
+
+[app/launcher]
+version = 6.2.3
+modtime = 1457994189.054066000
+
+[views/nasa_web_usage]
+owner = admin
+version = 6.2.3
+modtime = 1458526352.362101000
+
+[props/NASASquidLogs/EXTRACT-MonthDay]
+access = read : [ * ]
+owner = admin
+version = 6.2.3
+modtime = 1458280039.813478000
