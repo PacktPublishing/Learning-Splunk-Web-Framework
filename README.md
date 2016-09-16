@@ -3,7 +3,7 @@
 This is the code repository for [Learning Splunk Web Framework] (https://www.packtpub.com/big-data-and-business-intelligence/learning-splunk-web-framework?utm_source=GitHub&utm_medium=Repository&utm_campaign=9781786462947
 ), published by Packt. It contains all the supporting project files necessary to work through the course from start to finish.
 
-## What you will learn from this book
+## What you will learn 
 
 * Master the fundamentals of Splunk Web Framework
 * Start thinking of Splunk as a complete development platform to build user-friendly apps
