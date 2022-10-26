@@ -20,3 +20,7 @@ This is the code repository for [Learning Splunk Web Framework] (https://www.pac
 [Advanced Splunk](https://www.packtpub.com/big-data-and-business-intelligence/advanced-splunk?utm_source=GitHub&utm_medium=Repository&utm_campaign=9781785884351)
 
 [Splunk Developer's Guide] (https://www.packtpub.com/big-data-and-business-intelligence/splunk-developers-guide?utm_source=GitHub&utm_medium=Repository&utm_campaign=9781785285295)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781786462947">https://packt.link/free-ebook/9781786462947 </a> </p>
